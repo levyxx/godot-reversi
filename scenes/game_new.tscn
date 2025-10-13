@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh7vu0wsvmeik"]
+
+[ext_resource type="Script" uid="uid://coiop0kdljnlg" path="res://scripts/game_manager_new.gd" id="1_uscos"]
+[ext_resource type="Script" uid="uid://d4bdh6hyw3ek0" path="res://scripts/game_board_new.gd" id="2_g62ys"]
+
+[node name="game_new2" type="Node"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_uscos")
+
+[node name="GameBoard" type="Node2D" parent="."]
+script = ExtResource("2_g62ys")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TurnLabel" type="Label" parent="UI"]
+layout_mode = 0
+
+[node name="ScoreLabel" type="Label" parent="UI"]
+layout_mode = 0
+
+[node name="ResultPanel" type="PanelContainer" parent="UI"]
+layout_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ResultPanel"]
+layout_mode = 2
+
+[node name="ResultLabel" type="Label" parent="UI/ResultPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/ResultPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="RetryButton" type="Button" parent="UI/ResultPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="QuitButton" type="Button" parent="UI/ResultPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
