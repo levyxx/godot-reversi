@@ -35,3 +35,6 @@ __pycache__/
 *~
 .~lock.*
 server/
+
+# Addons (プラグイン)
+addons/
